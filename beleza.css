@@ -2,12 +2,14 @@
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap%27');
     /* TAGS */
     
-    form td, th, tr {
-    	background-color: #FFFFFF;
+    form td,
+    th,
+    tr {
+        background-color: #FFFFFF;
     }
     
     form {
-    	padding: 0px 50px 0px 50px;
+        padding: 0px 50px 0px 50px;
     }
     
     header {
@@ -81,7 +83,7 @@
     }
     
     #principal {
-        min-height: 500px;
+        min-height: 550px;
         padding: 50px;
     }
     
