@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="beleza.css">
+    <style>
+        /* No fieldset está localizado cada questão do quiz. Alteramos a sua borda e a deixamos arredondada, sombra, altura e margem de cima:
+        No botão tipo rádio colocamos um padding de 20px e a margem da esquerda de 10px. No formulário a margem de cima possui 15px. No Botão de 
+        validar as respostas (submit) alteramos sua cor de background e de texto para vermelho e branco, respectivamente. Altereramos o tamanho da fonte, padding
+        altura e largura, e suas margens. O display block e sem decoração de texto. */
+        
+        fieldset {
+            border-radius: 5px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            height: 150px;
+            margin-top: 20px;
+        }
+        
+        input[type="radio"] {
+            padding: 20px;
+            margin-left: 10px;
+        }
+        
+        form {
+            margin-top: 15px;
+        }
+        
+        input[type="submit"] {
+            background-color: #E60000;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 2px;
+            color: antiquewhite;
+            height: 35px;
+            width: 170px;
+            margin-left: 500px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <img title="marvel-logo" alt="error" src="images/marvel-logo.png" width="200px">
+            </div>
+
+            <ul class="menu">
+                <li><a href="site.html">HOME</a></li>
+                <li><a href="#">PERSONAGENS</a>
+                    <ul>
+                        <li><a href="miranha.html">HOMEM-ARANHA</a></li>
+                        <li><a href="demolidor.html">DEMOLIDOR</a></li>
+                    </ul>
+                    <li><a href="quiz.html">QUIZ</a></li>
+                </li>
+                <li><a href="dv.html">DESENVOLVEDORES</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="principal">
+        <div class="quiz1">
+            <h2>QUIZ</h2>
+            <fieldset>
+                <form method="post">
+                    1- Em que ano a Marvel foi criada?<br>
+                    <input type="radio" data-correct="wrong" class="qst" name="opAno" value="1" />1993 <br>
+                    <input id="q1" data-correct="correct" type="radio" class="qst" name="opAno" value="2" />1939 <br>
+                    <input type="radio" data-correct="wrong" name="opAno" class="qst" value="3" />1983 <br>
+                    <input type="radio" data-correct="wrong" name="opAno" class="qst" value="4" />1942 <br>
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    2- Qual foi o primeiro nome da Marvel comics? <br>
+                    <input type="radio" data-correct="wrong" name="opN" class="qst" value="1" />DC comics <br>
+                    <input type="radio" data-correct="wrong" name="opN" class="qst" value="2" />Atlas comics <br>
+                    <input id="q2" data-correct="correct" type="radio" class="qst" name="opN" value="3" />Timely comics
+                    <br>
+                    <input type="radio" data-correct="wrong" name="opN" class="qst" value="4" />Panini comics <br>
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    3- Em qual década foi lançada a primeira HQ do quarteto fantástico? <br>
+                    <input type="radio" data-correct="wrong" name="opD" class="qst" value="1" />40's <br>
+                    <input id="q3" data-correct="correct" type="radio" class="qst" name="opD" value="2" />60's <br>
+                    <input type="radio" data-correct="wrong" name="opD" class="qst" value="3" />80's <br>
+                    <input type="radio" data-correct="wrong" name="opD" class="qst" value="4" />50's <br>
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    4- É um dos poderes do Homem-Aranha: <br>
+                    <input type="radio" data-correct="wrong" name="opPM" class="qst" value="1" />Elasticidade <br>
+                    <input type="radio" data-correct="wrong" name="opPM" class="qst" value="2" />Mudar o futuro <br>
+                    <input id="q4" data-correct="correct" type="radio" class="qst" name="opPM" value="3" />Força sobre-humana <br>
+                    <input type="radio" data-correct="wrong" name="opPM" class="qst" value="4" />Lançar teias <br>
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    5- Qual o verdadeiro nome do Demolidor?<br>
+                    <input type="radio" data-correct="wrong" name="opPD" class="qst" value="1" />Bruce Wayne<br>
+                    <input type="radio" data-correct="wrong" name="opPD" class="qst" value="2" />Steve Rogers<br>
+                    <input id="q5" data-correct="correct" type="radio" class="qst" name="opPD" value="3" />Matthew Murdock <br>
+                    <input type="radio" data-correct="wrong" name="opPD" class="qst" value="4" />Klyfithon Paulo
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    6- Em quem o homem-aranha foi inspirado?<br>
+                    <input type="radio" data-correct="wrong" name="opI" class="qst" value="1" />Stan Lee <br>
+                    <input type="radio" data-correct="wrong" name="opI" class="qst" value="2 " />Homem de ferro <br>
+                    <input id="q6" data-correct="correct" type="radio" class="qst" name="opI " value="3" />The spider
+                    <br>
+                    <input type="radio" data-correct="wrong" name="opI" class="qst" value="4" />Anderson Silva<br>
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    7- Em 2020 qual foi a HQ mais vendida? <br>
+                    <input type="radio" data-correct="wrong" name="opHQ" class="qst" value="1" />Batman ano 1 <br>
+                    <input id="q7" data-correct="correct" type="radio" class="qst" name="opHQ" value="2" />X-men #47
+                    <br>
+                    <input type="radio" data-correct="wrong" name="opHQ" class="qst" value="3" />O espetacular Homem-Aranha #38 <br>
+                    <input type="radio" data-correct="wrong" name="opHQ" class="qst" value="4" />Turma da Mônica Jovem #50
+                    <br>
+                </form>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    8- Qual a profissão do demolidor? <br>
+                    <input id="q8" data-correct="correct" type="radio" class="qst" name="opProf" value="1" />Advogado
+                    <br>
+                    <input type="radio" data-correct="wrong" name="opProf" class="qst" value="2" />Ninja <br>
+                    <input type="radio" data-correct="wrong" name="opProf" class="qst" value="3" />Padre <br>
+                    <input type="radio" data-correct="wrong" name="opProf" class="qst" value="4" />Piloto de avião<br>
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    9- Quem criou o jovem Peter Parker?<br>
+                    <input type="radio" data-correct="wrong" name="opTio" class="qst" value="1 " />Thomas e Martha Wayne
+                    <br>
+                    <input type="radio" data-correct="wrong" name="opTio" class="qst" value="2" />John e Martha Kent<br>
+                    <input type="radio" data-correct="wrong" name="opTio" class="qst" value="3" />Maria e Benedito Estacionador <br>
+                    <input id="q9" data-correct="correct" type="radio" class="qst" name="opTio" value="4" />Ben e May Parker
+                    <br>
+                </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <form method="post">
+                    10- Que vilão o Homem-Aranha e Demolidor tem em comum? <br>
+                    <input type="radio" data-correct="wrong" class="qst" name="opVil" value="1" />Abutre <br>
+                    <input type="radio" data-correct="wrong" name="opVil" class="qst" value="2" />Coringa <br>
+                    <input id="q10" data-correct="correct" type="radio" class="qst" name="opVil" value="3" />Rei do Crime <br>
+                    <input type="radio" name="opVil" data-correct="wrong" class="qst" value="4" />Homem-Púrpura<br> <br>
+                    <br><br>
+                </form>
+
+            </fieldset>
+            <input type="submit" value="Exibir Resultados" id="verificar">
+
+
+        </div>
+    </div>
+    <br>
+
+    <footer>Desenvolvido por Klyf (O lindo) e Damdam.</footer>
+    <script>
+        /*Aqui temos um array que contém todas as respostas*/
+        var cont = 0
+        const questions = document.querySelectorAll('input.qst')
+
+        /*Aqui temos um evento de click para validar cada resposta*/
+        /*O ForEach serve para selecionar cada uma das respostas*/
+        questions.forEach(element => {
+            element.addEventListener('click', isValid)
+        })
+
+        /*Aqui é onde validamos as questões, caso corretas, elas contam como mais um no contador*/
+        /*Target serve para selecionar o nosso evento*/
+        function isValid(e) {
+            const answer = e.target
+
+            if (answer.getAttribute('data-correct') == "correct") {
+                cont++
+            }
+        }
+        document.getElementById("verificar").addEventListener('click', verificando)
+
+        /*Aqui é o alerta que mostra quantas questões foram marcadas corretamente e compara com o total de questões*/
+        function verificando() {
+            alert("você acertou " + cont + "/10!")
+        }
+    </script>
+</body>
+
+</html>
